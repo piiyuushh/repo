@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference</title>
+    <link rel="stylesheet" href="../CSS\style.css"> 
+    <style>
+        header{
+            height:100px;
+            background-color: aliceblue;
+            color: black;
+            text-align: center;
+            padding: 5px;
+            margin-top: 0px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            max-width: 100%;
+            max-height: 75%;
+            text-align: center;
+        }
+        img{
+            height: 500px;
+            width: 750px;
+
+        }
+        table{
+            width: 100%;
+            border: 0px;
+            text-align: center;
+            justify-content: center;
+            border-spacing: 5px;
+        }
+        table h3{
+            text-align: center;
+        }
+
+        /*Internal CSS for Navigation*/
+        .navigation{
+            color: black;
+            width: 70%;
+            background-color: transparent;
+            text-align: justify;
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 10px;
+            background-color: #303030;
+            padding: 20px;
+            }
+          
+            h3{
+            width: max-content;
+            position: relative;
+            cursor: pointer;
+            }
+    
+            h3::after{
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            height: 4px;
+            width: 100%;
+            left: 0;
+            background-color: white;
+            transition: 0.3s;
+            transform: scale(0);
+            transition-timing-function: ease-in-out;
+            }
+            
+            h3:hover::after{
+            transform: scale(1);
+            }
+    </style>
+</head>
+<body>
+    <nav>
+        <table class="navigation">
+            <tr>
+                <th>
+                    <a style="text-decoration: none;" href="../index.html"><h3 class="navtext">HOME</h3></a>
+                </th>
+                <th>
+                    <a style="text-decoration: none;" href="../HTML\aboutus.html"><h3 class="navtext">ABOUT US</h3></a>
+                </th>
+                <th>
+                    <a style="text-decoration: none;" href="../HTML\product.html"><h3 class="navtext">PRODUCT</h3></a>
+                </th>
+                <th>
+                    <a style="text-decoration: none;" href="../HTML\blog.html"><h3 class="navtext">BLOG</h3></a>
+                </th>
+                <th>
+                    <a style="text-decoration: none;" href="../HTML\reference.html"><h3 class="navtext">REFERENCE</h3></a>
+                </th>
+                
+            </tr>
+        </table>
+    </nav>
+    <br><br>
+    <header><h1>Reference</h1></header>
+    <table>
+        <tr>
+            <th><h3>Comaprision of home page of refered website and actual website</h3></th>
+            </tr>
+            <tr> 
+                <th><a href="https://www.amazon.com/"><img src="/images/reference website.png"></a></th>
+                <th><a href="../index.html"><img src="/images/actual website.png"></a></th>
+            </tr>
+           
+        <tr>
+            <th><h3>Comaprision of product page of refered page and actual page</h3></th>
+            </tr>
+            <tr>
+            <th><a href="https://www.usa.canon.com/printers#home"><img src="/images/product page referred.png" alt=""></a></th>
+            <th><a href="../HTML\product.html"><img src="/images/actual product page.png">
+        <tr>
+            <th><h3>Comaprision of login page of referred website and actual website</h3></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
+
+            <img src="/images/reference login.png">
+        </a></th>
+            <th><a href="/HTML/login.html"><img src="/images/actual login.png"></a></th>
+        </tr>
+    </table>
+    <br><br>
+    <footer>
+        
+        <h2 style="text-align: center;"> &copy;Islington College, 2024</h2>
+
+    </footer>
+</body>
+</html>

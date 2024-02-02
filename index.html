@@ -1,0 +1,407 @@
+<!-- this html file is the home page of the websit and it acts as a gaetway to all other webpages. Anchor tag is used to navigate 
+between these pages -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* internal css for body */
+        body{
+            background-color:  aliceblue;
+        }
+        /* internal css for text */
+        text{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: medium;
+            color: rgba(245, 245, 245, 0.949);
+            margin: auto;
+
+        }
+        /* internal css for h1 tag */
+        h1{
+            text-align: center;
+            color: white;
+            
+        }
+        /* internal css for h2 tag */
+        h2{
+            text-align: center;
+        }
+
+        /* internal css for table */
+        .navigation{
+            color: black;
+            width: 70%;
+            background-color: transparent;
+            text-align: justify;
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 10px;
+            background-color: #303030;
+            padding: 20px;
+            
+        }
+        /* internal css for iamge slider */
+        .slider
+        {
+            width: 90%;
+            height: 500px;
+            margin: 20px auto;
+            box-sizing: border-box;
+            overflow: hidden;
+            box-shadow: 5px 5px 10px grey;
+            border: 1px solid white;
+        }
+        .sliderimg
+        {
+            width: 100%;
+            height: 100%;
+
+        }
+        /* css for navigation hover effect */
+        h3{
+            width: max-content;
+            position: relative;
+            cursor: pointer;
+        }
+        h3::after{
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            height: 4px;
+            width: 100%;
+            left: 0;
+            background-color: white;
+            transition: 0.3s;
+            transform: scale(0);
+            transition-timing-function: ease-in-out;
+        }
+        h3:hover::after{
+            transform: scale(1);
+        }
+
+        /* hover effect for printer display section */
+        h4{
+            width: max-content;
+            position: relative;
+            cursor: pointer;
+        }
+        h4::after{
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            height: 4px;
+            width: 100%;
+            left: 0;
+            background-color: red;
+            transition: 0.3s;
+            transform: scale(0);
+            transition-timing-function: ease-in-out;
+        }
+        h4:hover::after{
+            transform: scale(1);
+        }
+    </style>
+    <link rel="stylesheet" href="CSS\style.css">
+</head>
+<body>
+    <!-- html for the sale banner image -->
+    <section>
+        <img height="260px" width="1420px" style="margin-bottom: 10px;" src="images/topimage.png" alt="">
+    </section>
+    <section>
+ <!-- html for navigation bar having search box -->
+        <nav>
+            <div class="navbar">
+                <div class="leftbar">   
+                    <a href="index.html"><img height="50px" src="images/image-removebg-preview.png" alt=""></a>
+                </div>
+
+                <div class="centerbar">
+                    <div class="search">
+                        <input class="searchbox" type="search" placeholder="Type to search">
+                    </div>       
+                </div>
+
+                <div class="rightbar">
+                    <table class="navtable">
+                        <tr>
+                                <a href="HTML/login.html"><img class="navimage" height="50px" width="50px" src="images/login.png" alt="login"></a>
+                                <img class="navimage" height="50px" width="50px" src="images/cart.png" alt="">
+                        </tr>
+                    </table>
+                </div>
+
+
+            </div>
+        
+        <!-- html for the actual navigation bar which navigates between pages -->
+            <table class="navigation">
+                <tr>
+                    <th>
+                        <a style="text-decoration: none;" href="index.html"><h3 class="navtext">HOME</h3></a>
+                    </th>
+                    <th>
+                        <a style="text-decoration: none;" href="HTML\aboutus.html"><h3 class="navtext">ABOUT US</h3></a>
+                    </th>
+                    <th>
+                        <a style="text-decoration: none;" href="HTML\product.html"><h3 class="navtext">PRODUCT</h3></a>
+                    </th>
+                    <th>
+                        <a style="text-decoration: none;" href="HTML\blog.html"><h3 class="navtext">BLOG</h3></a>
+                    </th>
+                    <th>
+                        <a style="text-decoration: none;" href="HTML\reference.html"><h3 class="navtext">REFERENCE</h3></a>
+                    </th>
+                    
+                </tr>
+            </table>
+        </nav>
+    </section>
+
+    <section>
+        <!-- html for the product category section -->
+        <div class="homeproductrow">
+            <div class="homeproductleft">
+            <a style="text-decoration: none; color: black; text-align: center;" href="../HTML\product.html">
+                <img style="margin-left: 10px;" height="400px" width="500px" src="images/ledprinter.jpeg" alt="">
+                <figcaption style="margin-left: 30%;"><h4 style="text-align: center; font-size: larger;">LED Printers</h4></figcaption>
+            </a>
+
+            </div>
+            <div class="homeproductcenter">
+                <div class="homeproductcard">
+                    <a style="text-decoration: none; color: black;" href="../HTML\product.html">
+                    <img height="180px" width="300px" src="images/inkjetprinters.jpeg" alt="">
+                     <figcaption style="margin-left: 30%;"><h4 style="text-align: center; font-size: larger;">Inkjet Printers</h4></figcaption>
+                    </a>
+                </div>
+                <div class="homeproductcard">
+                    <a style="text-decoration: none; color: black;" href="../HTML\product.html">
+                    <img height="180px" width="300px" src="images/multifunctionprinters.jpeg" alt="">
+                     <figcaption style="margin-left: 30%;"><h4 style="text-align: center; font-size: larger;">Multifunction Printers</h4></figcaption>
+                    </a>
+                </div>
+            </div>
+            
+
+            <div class="homeproductright">
+                <div class="homeproductcard">
+                    <a style="text-decoration: none; color: black;" href="../HTML\product.html">
+                    <img height="180px" width="300px" src="images/printercartridge.webp" alt="">
+                     <figcaption style="margin-left: 30%;"><h4 style="text-align: center; font-size: larger;">Cartridges</h4></figcaption>
+                    </a>
+                </div>
+                <div class="homeproductcard">
+                    <a style="text-decoration: none; color: black;" href="../HTML\product.html">
+                    <img height="180px" width="300px" src="images/otheraccessories.jpeg" alt="">
+                     <figcaption style="margin-left: 30%;"><h4 style="text-align: center; font-size: larger;">Inks and Accessories</h4></figcaption>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+     <!-- section for image slider with deals of the month -->
+     <section>
+            
+        <div class="box">
+            <h2>DEALS OF THE MONTH</h2>
+        </div>
+            
+         <div class="container2">
+            <div class="slider">
+                <div id="img">
+                    <img height="505px" width="1282px" src="images/slider1.png">
+                </div>
+            </div>
+        
+            <script>
+                var images = ['images/slider1.png' , 'images/slider2.png' , 'images/slider3.png'];
+        
+                var x=0;
+                var imgs = document.getElementById('img');
+                setInterval(slider,2000);
+        
+                function slider()
+                {
+                    if(x<images.length)
+                    {
+                        x = x+1;
+                    }
+                    else
+                    {
+                        x = 1;
+                    }
+                    imgs.innerHTML = "<img src=" + images[x-1]+">";
+                }
+            </script>
+         </div>     
+
+        
+     </section>
+
+    <!-- section for newproduct launch -->
+    <section>
+        <div style="height: 40px; width: 300px; border: 2px solid skyblue; background-color: white; padding-left: 100px; padding-right: 100px; padding-top: 10px; padding-bottom: 10px; margin-left: 33%;">
+          <h1 class="headingtext">What's new?</h1>
+        </div> <br><br>
+        <div>
+            <h2 style="color: black;">Canon Pixma G3730 Inkjet Multi Function Color Printer</h2>
+        </div>
+        <div class="newlaunchrow">
+            <div class="newlaunchleft">
+                <img class="toogleimage hide" id="1" src="images/newlaunch1.png" >
+                <img class="toogleimage hide" id="2" src="images/newlaunch3.png"><br>
+                <button style="align-items: center; background-color: transparent; margin-left: 30%; border-radius: 15px; width: 200px; height: 40px;" onclick="toggleimg()">Change Color</button>
+            </div>
+
+            <div class="newlaunchcenter">
+                <div class="card2">
+                    <h2>Print speed: 6 ppm</h2>
+                </div>
+                <div class="card2">
+                    <h2>Offers wireless connectivity</h2>
+                </div>
+                <div class="card2">
+                    <h2>Printing Output: Color</h2>
+                </div>
+                <div class="card2">
+                    <h2>Available in two colors</h2>
+                </div>
+            </div>
+            <div class="newlaunchright">
+                <img height="300px" src="images/newlaunchimage2.avif" alt="">
+
+            </div>
+
+        </div>
+    </section>
+   
+    <!-- javascript to toogle image  -->
+    <script> 
+    function toggleimg()
+       {
+        var p1 = document.getElementById('1');
+        var p2 = document.getElementById('2');
+
+        if(p1.style.display == 'none')
+        {
+            p1.style.display = "block";
+            p2.style.display = "none";
+        }
+        else
+        {
+            p1.style.display = "none";
+            p2.style.display = "block";
+        }
+        
+       }
+       document.getElementById("1").style.display = 'block';
+
+    </script>
+
+       
+
+
+
+    <section>
+        <div class= featurerow>
+        <div class="featureleft">
+            <div class="card"><h3>Branded printer reseller in Nepal.</h3></div>
+            
+        </div>
+        <div class="featurecenter">
+            <div class="card"><h3>Your go-to site for printers.</h3></div>
+        </div>
+        <div class="featureright">
+            <div class="card"><h3>Delivery all over Nepal.</h3></div>
+        </div>
+    </div>
+    </section>
+
+    <!-- html for footer -->
+    <footer>
+        <hr>
+        <div class="footer">
+            <div class="footer1">
+                <p class="footertext">
+                    <h6 class="footertext2">Information:</h6>
+                    Terms and Conditions <br>
+                    Contact Us <br>
+                    Privacy and Security <br>
+                    License <br>
+                    Downloads <br>
+                    Press Center <br>
+
+                </p>
+            </div>
+
+
+            <div class="footer1">
+                <p class="footertext">
+                    <h6 class="footertext2"><b>Our Services:</b></h6>
+                    Support <br>
+                    Serivice <br>
+                    Customer Care <br>
+                    Community <br>
+                    FAQs <br>
+                    Manual <br>
+                </p>
+            </div>
+
+            <div class="footer1">
+                <p class="footertext">
+                    <h6 class="footertext2">Product:</h6>
+                    Where to buy? <br>
+                    Ink,Topper and Paper <br>
+                    Recycling <br>
+                    Sustainability <br>
+                    Creative Park <br>
+                </p>
+
+            </div>
+
+            <div class="footer1">
+                <h6 class="footertext2">Product Partners:</h6>
+                <table class="footertable" style="background-color: transparent;">
+                    <tr>
+                        <th><a href="https://www.canon-europe.com/printers/"><img style="margin-left: 100%;" height="50px" width="70 px" src="..\images/canon.png" alt=""></a></th>
+                    </tr>
+                    <tr>
+                        <th><a href="https://www.hp.com/us-en/shop/cat/printers"><img style="margin-left: 100%;" height="50px" width="50px" src="..\images/hp.jpeg" alt=""></a></th>
+                    </tr>
+                    <tr>
+                        <th><a href="https://epson.com/printers"><img style="margin-left: 100%;" height="50px" width="50px" src="..\images/epson-logo-black-and-white-removebg-preview.png" alt=""></a></th>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="footer1">
+                <p class="footertext">
+                    <h6 class="footertext2">Contact</h6>
+                    carbon.copy@gmail.com <br>
+                    +977 9873692739 <br>
+                    Kathmandu,Nepal <br>
+                </p>
+
+            </div>
+
+            <div class="footer1">
+                <h6 class="footertext2">Readings:</h6>
+                <p class="footertext">
+                    Stories <br>
+                    Tips <br>
+                </p>
+            </div>
+        </div>
+        <h2 style="text-align: center;"> &copy;Islington College, 2024</h2>
+
+    </footer>
+</body>
+</html>

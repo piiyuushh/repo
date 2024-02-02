@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageCLASS MF462dw</title>
+
+    <!-- Internal CSS for this page only -->
+    <style>
+
+        *{
+            margin: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+        }
+
+        .ProductFlex{
+            display: flex;
+            margin: 22px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .ProductMainImg img{
+            width: 366px;
+            margin-top: 40px;
+            margin-inline: 30px;
+            border: 1px solid rgb(221, 221, 221);
+        }
+
+        .ProductSubImg img{
+            width: 74px;
+            margin-top: 0px;
+            margin-inline: 30px;
+            border: 1px solid rgb(221, 221, 221);
+        }
+
+        .ProductBuyDetails{
+            margin-top: 2px;
+        }
+
+        .ProductBuyDetails h3{
+            font-weight: bold;
+            margin-top: 22px;
+        }
+
+        .ProductBuyDetails h1{
+            margin-top: 32px;
+        }
+
+        .ProductBuyDetails img{
+            margin-top: 22px;
+        }
+
+        .ProductBuyDetails h4{
+            margin-top: 22px;
+        }
+
+        .ProductBuyDetails p{
+            margin-top: 5px;
+        }
+
+        .ProductBuyDetails button{
+            width: 200px;
+            height: 50px;
+            background-color: blueviolet;
+            border-radius: 30px;
+            color: white;
+            font-size: 20px;
+            margin-top: 35px;
+            margin-inline: 20px;
+            font-weight: 600;
+        }
+
+        .ProductBuyDetails button:hover{
+            cursor: pointer;
+            background-color: rgb(112, 6, 211);
+        }
+
+    </style>
+</head>
+<body>
+<!-- Back Button to Product Page -->
+<a href="../HTML\product.html"><button style="height: 30px; width: 40px; margin:10px 10px">Back</button></a>
+
+    <!-- HTML code for Single Product imageCLASS MF462dw -->
+    <div class="ProductFlex">
+
+        <div class="ProductMainImg">
+            <img src="../images\Printers\Cannon\imageCLASS MF462dw - All-in-One, Wireless, Duplex Laser Printer\1.png" alt="imageCLASS MF273dw.png" id="img">
+
+            <div class="ProductSubImg">
+                <img src="../images\Printers\Cannon\imageCLASS MF462dw - All-in-One, Wireless, Duplex Laser Printer\1.png" alt="" onclick="clk(this)">
+                <img src="../images\Printers\Cannon\imageCLASS MF462dw - All-in-One, Wireless, Duplex Laser Printer\2.png" alt="" onclick="clk(this)">
+                <img src="../images\Printers\Cannon\imageCLASS MF462dw - All-in-One, Wireless, Duplex Laser Printer\3.png" alt="" onclick="clk(this)">
+            </div>
+        </div>
+
+
+        <div class="ProductBuyDetails">
+            <h3>Carbon Copy</h3>
+            <h1>imageCLASS MF462dw - All-in-One, Wireless, Duplex Laser Printer</h1>
+            <h1>Rs 36,000</h1>
+            <img src="../images\Icons\ReviewFullStar.png" alt="ReviewFullStar.png">
+            <img src="../images\Icons\ReviewFullStar.png" alt="ReviewFullStar.png">
+            <img src="../images\Icons\ReviewFullStar.png" alt="ReviewFullStar.png">
+            <img src="../images\Icons\ReviewFullStar.png" alt="ReviewFullStar.png">
+            <img src="../images\Icons\ReviewHalfStar.png" alt="ReviewHalfStar.png">
+            <h3>Brand: Canon</h3>
+            <h4><u>Product Description</u></h4>
+            <br>
+            <ul>
+            <li>Wireless 3-in-1 (Print | Copy | Scan)</li>
+            <li>Print up to 30 Pages Per Minute (BW)</li>
+            <li>Uses Toner 071 / 071 High-Capacity Toner</li>
+            <li>150-sheet Standard Cassette, 35-sheet Automatic Document Feeder</li>
+            <li>Auto 2-sided Printing</li>
+            <li>ENERGY STAR®, EPEAT Silver</li>
+            <li>1 Year Limited Warranty</li>
+            </ul>
+            <button>Add to Cart</button>
+            <button>Buy Now!</button>
+        </div>
+    </div>
+
+    <!-- Internal JavaScript Tag for Changing the main Product Image -->
+    <script>
+        function clk(newImg){
+            let getImg=document.getElementById("img");
+            getImg.src=newImg.src;
+        }
+    </script>
+
+</body>
+</html>

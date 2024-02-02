@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css"> <!--linking external css file-->
+    <title>LOGIN</title>
+    <style>                                 /*internal css*/
+        
+        body{
+            text-align: left;
+            min-height: 100px;
+            display: flex;
+            font-family: sans-serif;
+            background-color: aliceblue;
+        }
+        .container{
+            margin:auto;
+            width: 500px;
+            align-items: center;
+        }
+        .container h1{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .container form{
+            background:white;
+            height: 100%;
+            width: 100%;
+            padding: 20%;
+            border-radius: 4px;
+            box-shadow: 0px 8px 16px skyblue;
+        }
+        div h1{
+            text-align: center;
+            font-family: serif;
+        }
+        
+    </style>
+</head>
+<body class="body">
+    <div class="container">
+        <h1 align="center">Login Form</h1>
+        <table  align="center">
+            <th bgcolor="white">
+                <form name="signup" onsubmit="validateform()">    <!--creating a contact form-->
+                    <p color="white">Email:<br><input type="email" name="email"></p>
+                    <p color="white">Password<br><input type="password" name="password"></p>
+                    <p color="white">Select your gender: <br><input type="radio" name="gender" value="male" checked>Male
+                        <input type="radio" name="gender" value="female">Female<br></p>
+                    <p>Phone:<br><input type="int" name="phone"></p>
+                   <p> <input type="checkbox" name="checkbox">I agree to the <u>Terms of use</u> and <u>Privacy policies</u></p>
+                   <input style="height: 40px; width: 60px;" type="submit" value="submit"><br>
+                </form>    <!--this form will take the given data from the user and store in function validateform()-->
+                <script> //making popup output using javaScript
+                    function validateform(){     
+                        var email=document.forms ["signup"]["email"].value;
+                        var password=document.forms ["signup"]["password"].value;
+                        var gender=document.forms ["signup"]["gender"].value;
+                        var phone=document.forms ["signup"]["phone"].value;
+                        if (email==""|| password==""|| gender==""|| phone==""){
+                            alert ("Please fill all the details.")
+                        }
+                        else{
+                            alert ("Thank you. The form has been submitted succesfully.")
+                        }
+                    }
+                </script>
+            </th>
+           </tr> 
+        </table>
+        </div>
+</body>
+</html>

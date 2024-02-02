@@ -1,0 +1,450 @@
+<!-- Here the base of the website is created.
+The following page contains the Product page of the website. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the website -->
+    <title>Product</title> 
+    <!-- Linking the external CSS file -->
+    <link rel="stylesheet" href="../CSS\style.css" />
+
+    <!-- Internal CSS -->
+    <style>
+    /*Internal CSS for Navigation*/
+      .navigation{
+        color: black;
+        width: 70%;
+        background-color: transparent;
+        text-align: justify;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 10px;
+        background-color: #303030;
+        padding: 20px;
+      }
+      
+      h3{
+        width: max-content;
+        position: relative;
+        cursor: pointer;
+    }
+    h3::after{
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        height: 4px;
+        width: 100%;
+        left: 0;
+        background-color: white;
+        transition: 0.3s;
+        transform: scale(0);
+        transition-timing-function: ease-in-out;
+    }
+    h3:hover::after{
+        transform: scale(1);
+    }
+    </style>
+  </head>
+  <body>
+
+<!-- This is the header part of the Product Page -->
+  <header>
+
+      <section class="Template">
+         <img src="../images\Logo.png" alt="WebsiteLogo.png" height="50px" width="250px">
+         <br>
+         <h1 style="margin:0px; font-size:70px; color:blueviolet">
+          Get The Best Deals On <br> Printers
+         </h1>
+         <h2 id="templateDescription" style="font-size: 40px;">Get Creative With Every Prints...</h2>
+         <br>
+         <br>
+         <button id="ViewProducts" onclick="scrollToProduct()" style="background-color: transparent; height:40px; width:150px; cursor: pointer; ">View Products</button>
+      </section>
+
+      <nav id="ProductNav" style="margin-top:0; padding-left: 150px;">
+        <table class="navigation" >
+          <tr>
+              <th>
+                  <a style="text-decoration: none;" href="../index.html"><h3 class="navtext">HOME</h3></a>
+              </th>
+              <th>
+                  <a style="text-decoration: none;" href="../HTML\aboutus.html"><h3 class="navtext">ABOUT US</h3></a>
+              </th>
+              <th>
+                  <a style="text-decoration: none;" href="../HTML\product.html"><h3 class="navtext">PRODUCT</h3></a>
+              </th>
+              <th>
+                  <a style="text-decoration: none;" href="../HTML\blog.html"><h3 class="navtext">BLOG</h3></a>
+              </th>
+              <th>
+                  <a style="text-decoration: none;" href="../HTML\reference.html"><h3 class="navtext">REFERENCE</h3></a>
+              </th>
+              
+          </tr>
+      </table>
+      </nav>
+
+  </header>
+  
+<!-- This is the main part of the Product Page where products and their categories are listed -->
+   <main>
+
+<!-- A div class with section is created to quickly navigate to the selected product section -->
+    <div class="iconSearchContainer" id="iconSearchContainer">
+      <section id="iconSearch">
+        <br>
+           <h4>Looking For:</h4>
+           <br>
+           <table class="iconTable">
+              <tr>  <!-- onclick javascript isused to perform scroll function to the desired Section--> 
+                  <td><img src="../images\Icons\canonIcon.png" alt="canonIcon.png" onclick="scrollToCanon()"></td>
+                  <td><img src="../images\Icons\hpIcon.png" alt="hpIcon.png" onclick="scrollToHp()"></td>
+                  <td><img src="../images\Icons\epsonIcon.png" alt="epsonIcon.png" onclick="scrollToEpson()"></td>
+              </tr>
+           </table>
+      </section>
+    </div>  
+      <br>
+
+<!-- Code of HTML for the product Brand -->
+    <div class="AllBrand">
+      <!-- The following HTML code includes Branding of Cannon logo and its product categories. -->
+    <div class="ProductBorder">
+    <section id="Cannon" class="Product-section-1">
+        <br><br><br>
+      <img src="../images\Brand Logo\Cannon_icon.png" alt="Cannon_icon.png">
+      <p style="font-size: medium;"><u><b>Canon Printers that we Sell</b></u></p>  <!-- inline css is used for paragraph tag for convenience -->
+      <br><br><br>
+
+      <!-- HTML code of for Canon Printers categories -->
+      <div class="Cannon-home">
+        <h2 style="font-size: 50px;"><b>Printers For Home & Work</b></h2>
+        <div class="Cannon-Homecontainer">
+
+          <!-- HTML code for the imageCLASS MF462dw printer of Canon -->
+          <div class="cannonHomePrinter">
+            <img
+              src="../images\Printers\Cannon\imageCLASS MF462dw - All-in-One, Wireless, Duplex Laser Printer\1.png"
+              alt="CannonHomePrinter1.png"
+            />
+            <div class="cannonHomePrinter1Description">
+              <br>
+              <h5 class="PrinterNameLook">imageCLASS MF462dw</h5>
+              <br>
+              <h6 class="PrinterPriceLook">Rs 36,000</h6>
+              <br>
+              <a href="imageCLASS_MF462dw.html"><img src="../images\Icons\redLeftArrow.png" alt="redLeftArrow.png" class="redLeftArrow"></a>
+            </div>
+          </div>
+          
+          <!-- HTML code for the PIXMA G4270 of Canon -->
+          <div class="cannonHomePrinter">
+            <img
+              src="../images\Printers\Cannon\PIXMA G4270 - Wireless MegaTank All-in-One Printer\1.png"
+              alt="CannonHomePrinter2.jpg"
+            />
+            <div class="cannonHomePrinter2Description">
+              <br>
+              <h5 class="PrinterNameLook">PIXMA G4270</h5>
+              <br>
+              <h6 class="PrinterPriceLook">Rs 24,000</h6>
+              <br>
+              <a href="PIXMA_G4270.html"><img src="../images\Icons\redLeftArrow.png" alt="redLeftArrow.png" class="redLeftArrow"></a>
+            </div>
+          </div>
+
+          <!-- HTML code for the PIXMA TR7820 of Canon -->
+          <div class="cannonHomePrinter">
+            <img
+              src="../images\Printers\Cannon\PIXMA TR7820 Wireless Home All-in-One Printer\1.png"
+              alt="CannonHomePrinter3.jpg"
+            />
+            <div class="cannonHomePrinter3Description">
+              <br>
+              <h5 class="PrinterNameLook">PIXMA TR7820</h5>
+              <br>
+              <h6 class="PrinterPriceLook">Rs 12,000</h6>
+              <br>
+              <a href="PIXMA_TR7820.html"><img src="../images\Icons\redLeftArrow.png" alt="redLeftArrow.png" class="redLeftArrow"></a>
+            </div>
+          </div>
+
+          <!-- HTML code for the imageCLASS MF273dw of Canon -->
+          <div class="cannonHomePrinter">
+            <img
+              src="../images\Printers\Cannon\imageCLASS MF273dw - Multifunction, Wireless, Duplex Laser Printer\1.png"
+              alt="CannonHomePrinter4.jpg"
+            />
+            <div class="cannonHomePrinter4Description">
+              <br>
+              <h5 class="PrinterNameLook">imageCLASS MF273dw</h5>
+              <br>
+              <h6 class="PrinterPriceLook">Rs 19,000</h6>
+              <br>
+              <a href="ImageCLASS_MF273dw.html"><img src="../images\Icons\redLeftArrow.png" alt="redLeftArrow.png" class="redLeftArrow"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+    <br>
+    
+
+      <!-- The following HTML code includes Branding of HP logo and its product categories. -->
+  <div class="ProductBorder">
+    <section id="Hp" class="Product-section-2">
+    <br><br><br>
+        <img src="../images\Brand Logo\Hp_icon.png" alt="Hp_icon.png">
+        <p style="font-size: medium;"><u><b>Hp Printers that we Sell</b></u></p>      <!-- inline css is used for paragraph tag for convenience -->
+        <br><br><br>
+ 
+         <!-- HTML code of for HP Printers categories -->
+        <div class="Hp-home">
+          <h2 style="font-size: 50px;"><b>Printers For Home & Work</b></h2>
+          <div class="Hp-Homecontainer">
+
+            <!-- HTML code for the HP DeskJet 4155e printer of HP-->
+            <div class="HpHomePrinter">
+              <img
+                src="../images\Printers\HP\HP DeskJet 4155e\1.png"
+                alt="HpHomePrinter1.jpg"
+              />
+              <div class="HpHomePrinter1Description">
+                <br>
+                <h5 class="PrinterNameLook">HP DeskJet 4155e</h5>
+                <br>
+                <h6 class="PrinterPriceLook">Rs 9,900</h6>
+                <br>
+                <a href="#"><img src="../images\Icons\blueLeftArrow.png" alt="blueLeftArrow.png" class="blueLeftArrow"></a>
+              </div>
+            </div>
+  
+            <!-- HTML code for the HP ENVY Inspire 7955e printer of HP-->
+            <div class="HpHomePrinter">
+                <img
+                  src="../images\Printers\HP\HP ENVY Inspire 7955e\1.png"
+                  alt="HpHomePrinter2.jpg"
+                />
+                <div class="HpHomePrinter2Description">
+                  <br>
+                  <h5 class="PrinterNameLook">HP ENVY Inspire 7955e</h5>
+                  <br>
+                  <h6 class="PrinterPriceLook">Rs 36,000</h6>
+                  <br>
+                  <a href="#"><img src="../images\Icons\blueLeftArrow.png" alt="blueLeftArrow.png" class="blueLeftArrow"></a>
+                </div>
+              </div>
+  
+            <!-- HTML code for the HP Smart Tank 7301 printer of HP-->
+              <div class="HpHomePrinter">
+                <img
+                  src="../images\Printers\HP\HP Smart Tank 7301\1.png"
+                  alt="HpHomePrinter3.jpg"
+                />
+                <div class="HpHomePrinter3Description">
+                  <br>
+                  <h5 class="PrinterNameLook">HP Smart Tank 7301</h5>
+                  <br>
+                  <h6 class="PrinterPriceLook">Rs 26,000</h6>
+                  <br>
+                  <a href="#"><img src="../images\Icons\blueLeftArrow.png" alt="blueLeftArrow.png" class="blueLeftArrow"></a>
+                </div>
+              </div>
+  
+            <!-- HTML code for the HP OfficeJet Pro 9025e printer of HP-->
+              <div class="HpHomePrinter">
+                <img
+                  src="../images\Printers\HP\HP OfficeJet Pro 9025e\1.png"
+                  alt="HpHomePrinter4.jpg"
+                />
+                <div class="HpHomePrinter4Description">
+                  <br>
+                  <h5 class="PrinterNameLook">HP OfficeJet Pro 9025e</h5>
+                  <br>
+                  <h6 class="PrinterPriceLook">Rs 36,000</h6>
+                  <br>
+                  <a href="#"><img src="../images\Icons\blueLeftArrow.png" alt="blueLeftArrow.png" class="blueLeftArrow"></a>
+                </div>
+              </div>
+
+          </div>
+        </div>
+  
+      </section>
+  </div>
+      <br>
+    
+      <!-- The following HTML code includes Branding of ESPON logo and its product categories. -->
+  <div class="ProductBorder">
+    <section id="Epson" class="Product-section-3">
+        <br><br><br>
+        <img src="../images\Brand Logo\Epson_icon.png" alt="Epson_icon.png" style="height: 101px;" width="496px">  <!-- inline css is used for img tag for convenience -->
+        <p style="font-size: medium;"><u><b>EPSON Printers that we Sell</b></u></p>          <!-- inline css is used for paragraph tag for convenience -->
+        <br><br><br>
+
+         <!-- HTML code of for ESPON Printers categories -->
+        <div class="Epson-home">
+          <h2 style="font-size: 50px;"><b>Printers For Home & Work</b></h2>
+          <div class="Epson-Homecontainer">
+  
+            <!-- HTML code for the EcoTank ET-2400 printer of ESPON-->
+            <div class="EpsonHomePrinter">
+              <img
+                src="../images\Printers\ESPON\EcoTank ET-2400\1.png"
+                alt="EpsonHomePrinter1.jpg"
+              />
+              <div class="EpsonHomePrinter1Description">
+                <br>
+                <h5 class="PrinterNameLook">EcoTank ET-2400</h5>
+                <br>
+                <h6 class="PrinterPriceLook">Rs 35,000</h6>
+                <br>
+                <a href="#"><img src="../images\Icons\darkBlueLeftArrow.png" alt="darkBlueLeftArrow.png" class="darkBlueLeftArrow"></a>
+              </div>
+            </div>
+  
+            <!-- HTML code for the EcoTank ET-2800 printer of ESPON-->
+            <div class="EpsonHomePrinter">
+                <img
+                  src="../images\Printers\ESPON\EcoTank ET-2800\1.png"
+                  alt="EpsonHomePrinter2.jpg"
+                />
+                <div class="EpsonHomePrinter2Description">
+                  <br>
+                  <h5 class="PrinterNameLook">EcoTank ET-2800</h5>
+                  <br>
+                  <h6 class="PrinterPriceLook">Rs 40,000</h6>
+                  <br>
+                  <a href="#"><img src="../images\Icons\darkBlueLeftArrow.png" alt="darkBlueLeftArrow.png" class="darkBlueLeftArrow"></a>
+                </div>
+              </div>
+  
+            <!-- HTML code for the EcoTank ET-2840 printer of ESPON-->
+            <div class="EpsonHomePrinter">
+                <img
+                  src="../images\Printers\ESPON\EcoTank ET-2840\1.png"
+                  alt="EpsonHomePrinter3.jpg"
+                />
+                <div class="EpsonHomePrinter3Description">
+                  <br>
+                  <h5 class="PrinterNameLook">EcoTank ET-2840</h5>
+                  <br>
+                  <h6 class="PrinterPriceLook">Rs 26,000</h6>
+                  <br>
+                  <a href="#"><img src="../images\Icons\darkBlueLeftArrow.png" alt="darkBlueLeftArrow.png" class="darkBlueLeftArrow"></a>
+                </div>
+            </div>
+  
+            <!-- HTML code for the EcoTank ET-2850 printer of ESPON-->
+            <div class="EpsonHomePrinter">
+                <img
+                  src="../images\Printers\ESPON\EcoTank ET-2850\1.png"
+                  alt="EpsonHomePrinter4.jpg"
+                />
+                <div class="EpsonHomePrinter4Description">
+                  <br>
+                  <h5 class="PrinterNameLook">EcoTank ET-2850</h5>
+                  <br>
+                  <h6 class="PrinterPriceLook">Rs 30,000</h6>
+                  <br>
+                  <a href="#"><img src="../images\Icons\darkBlueLeftArrow.png" alt="darkBlueLeftArrow.png" class="darkBlueLeftArrow"></a>
+                </div>
+            </div>
+          </div>
+        </div>
+  
+      </section>
+  </div>  
+      <br>
+      <br><br><br>
+      </div>
+  </main> 
+
+  <footer>
+    <hr>
+    <div class="footer">
+        <div class="footer1">
+            <p class="footertext">
+                <h6 class="footertext2">Information:</h6>
+                Terms and Conditions <br>
+                Contact Us <br>
+                Privacy and Security <br>
+                License <br>
+                Downloads <br>
+                Press Center <br>
+
+            </p>
+        </div>
+
+
+        <div class="footer1">
+            <p class="footertext">
+                <h6 class="footertext2"><b>Our Services:</b></h6>
+                Support <br>
+                Serivice <br>
+                Customer Care <br>
+                Community <br>
+                FAQs <br>
+                Manual <br>
+            </p>
+        </div>
+
+        <div class="footer1">
+            <p class="footertext">
+                <h6 class="footertext2">Product:</h6>
+                Where to buy? <br>
+                Ink,Topper and Paper <br>
+                Recycling <br>
+                Sustainability <br>
+                Creative Park <br>
+            </p>
+
+        </div>
+
+        <div class="footer1">
+            <h6 class="footertext2">Product Partners:</h6>
+            <table class="footertable" style="background-color: transparent;">
+                <tr>
+                    <th><a href="https://www.canon-europe.com/printers/"><img style="margin-left: 100%;" height="50px" width="70 px" src="..\images/canon.png" alt=""></a></th>
+                </tr>
+                <tr>
+                    <th><a href="https://www.hp.com/us-en/shop/cat/printers"><img style="margin-left: 100%;" height="50px" width="50px" src="..\images/hp.jpeg" alt=""></a></th>
+                </tr>
+                <tr>
+                    <th><a href="https://epson.com/printers"><img style="margin-left: 100%;" height="50px" width="50px" src="..\images/epson-logo-black-and-white-removebg-preview.png" alt=""></a></th>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="footer1">
+            <p class="footertext">
+                <h6 class="footertext2">Contact</h6>
+                carbon.copy@gmail.com <br>
+                +977 9873692739 <br>
+                Kathmandu,Nepal <br>
+            </p>
+
+        </div>
+
+        <div class="footer1">
+            <h6 class="footertext2">Readings:</h6>
+            <p class="footertext">
+                Stories <br>
+                Tips <br>
+            </p>
+        </div>
+    </div>
+    <h2 style="text-align: center;"> &copy;Islington College, 2024</h2>
+
+</footer>
+    
+<!-- Script tag to link the external JavaScript File -->
+      <script src="../JS\script.js"></script>
+  </body>
+</html>
