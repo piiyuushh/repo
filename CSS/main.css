@@ -1,0 +1,80 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color */
+body {
+  background-color: #f5f5f5;
+}
+
+/* Set font styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Set container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Set header styles */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Set navigation styles */
+.navbar {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+}
+
+.navbar a:hover {
+  color: #666;
+}
+
+/* Set content styles */
+.content {
+  padding: 20px;
+}
+
+/* Set footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
