@@ -25,10 +25,13 @@
 
         body {
             background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
         }
 
         a p {
-            font-family: arial;
+            font-family: Arial, Helvetica, sans-serif;
             color: black;
             text-decoration: none;
         }
@@ -50,6 +53,9 @@
             width: max-content;
             position: relative;
             cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
         }
 
         h3::after {
@@ -81,6 +87,9 @@
         .form-container h2 {
             text-align: center;
             margin-bottom: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
         }
 
         .form-container input[type="text"],
@@ -93,6 +102,8 @@
             box-sizing: border-box;
             margin-bottom: 10px;
             resize: vertical;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
         }
 
         .form-container input[type="submit"] {
@@ -103,6 +114,9 @@
             border-radius: 4px;
             cursor: pointer;
             width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
         }
 
         .form-container input[type="submit"]:hover {
@@ -147,29 +161,29 @@
     </nav>
     <br><br>
     <header>
-        <h1>Team Info</h1>
+        <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: bold;">Team Info</h1>
     </header>
     <section>
         <table class="tabletwo" border=0px>
             <tr>
                 <th>
-                    <a href="arpanport.html"><img src="/images/arpan.jpeg" class="img">
-                        <p>Arpan Nepal</p>
+                    <a href="arpanport.html"><img src="../images/aashutosh.jpg" class="img">
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">Arpan Nepal</p>
                     </a><br> <!--adding ancher tag to make image clickable-->
                 </th>
                 <th>
-                    <a href="piyushport.html"><img src="/images/piyush.JPG" class="img">
-                        <p>Piyush Karn</p>
+                    <a href="piyushport.html"><img src="../images/piyush.JPG" class="img">
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">Piyush Karn</p>
                     </a><br>
                 </th>
                 <th>
-                    <a href="samyogport.html"><img src="/images/samyog.jpg" class="img">
-                        <p>Samyog RajBhandari</p>
+                    <a href="samyogport.html"><img src="../images/samyog.jpg" class="img">
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">Samyog RajBhandari</p>
                     </a><br>
                 </th>
                 <th>
-                    <a href="aashutoshport.html"><img src="/images/aashutosh.jpg" class="img">
-                        <p>Aashutosh Dhakal</p>
+                    <a href="aashutoshport.html"><img src="../images/aashutosh.jpg" class="img">
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">Aashutosh Dhakal</p>
                     </a><br>
                 </th>
             </tr>
@@ -178,9 +192,11 @@
 
     <section>
         <div class="div">
-            <h1 align="center">Contact us</h1><br> <!-- using term "class" to link with external css-->
+            <h1 align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: bold;">
+                Contact us</h1><br> <!-- using term "class" to link with external css-->
             <form name="contact" class="form-container" onsubmit="validateform()">
-                <h2>Get in touch</h2>
+                <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold;">Get in touch
+                </h2>
                 <input type="text" name="fname" placeholder="First name" required>
                 <input type="text" name="lname" placeholder="Last name" required>
                 <input type="text" name="phone" placeholder="Phone" required>
@@ -288,7 +304,8 @@
                 </p>
             </div>
         </div>
-        <h2 style="text-align: center;"> &copy;Islington College, 2024</h2>
+        <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 18px;"> &copy;Islington
+            College, 2024</h2>
 
     </footer>
 
