@@ -1,72 +1,112 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="style.css"> <!--linking external css file-->
     <title>LOGIN</title>
-    <style>                                 /*internal css*/
-        
-        body{
-            text-align: left;
-            min-height: 100px;
+    <style>
+        /*internal css*/
+
+        body {
+            text-align: center;
+            min-height: 100vh;
             display: flex;
-            font-family: sans-serif;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
             background-color: aliceblue;
         }
-        .container{
-            margin:auto;
-            width: 500px;
-            align-items: center;
+
+        .container {
+            width: 400px;
+            padding: 20px;
+            border-radius: 20px;
+            /* Rounded corners */
+            box-shadow: 0px 8px 16px skyblue;
+            background: white;
         }
-        .container h1{
+
+        .container h1 {
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
         }
-        .container form{
-            background:white;
-            height: 100%;
+
+        .container form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container form p {
+            margin-bottom: 10px;
+        }
+
+        .container form input[type="email"],
+        .container form input[type="password"],
+        .container form input[type="int"] {
             width: 100%;
-            padding: 20%;
+            padding: 8px;
+            border: 1px solid #ccc;
             border-radius: 4px;
-            box-shadow: 0px 8px 16px skyblue;
         }
-        div h1{
-            text-align: center;
-            font-family: serif;
+
+        .container form input[type="radio"] {
+            margin-right: 5px;
         }
-        
+
+        .container form input[type="submit"] {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: skyblue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .container form input[type="submit"]:hover {
+            background-color: dodgerblue;
+        }
+
+        .container form p:last-child {
+            margin-top: 20px;
+        }
     </style>
 </head>
-<body class="body">
+
+<body>
     <div class="container">
-        <h1 align="center">Login Form</h1>
-        <table  align="center">
-            <th bgcolor="white">
-                <form name="signup" onsubmit="validateform()">    <!--creating a contact form-->
-                    <p color="white">Email:<br><input type="email" name="email"></p>
-                    <p color="white">Password<br><input type="password" name="password"></p>
-                    <p color="white">Select your gender: <br><input type="radio" name="gender" value="male" checked>Male
-                        <input type="radio" name="gender" value="female">Female<br></p>
-                    <p>Phone:<br><input type="int" name="phone"></p>
-                   <p> <input type="checkbox" name="checkbox">I agree to the <u>Terms of use</u> and <u>Privacy policies</u></p>
-                   <input style="height: 40px; width: 60px;" type="submit" value="submit"><br>
-                </form>    <!--this form will take the given data from the user and store in function validateform()-->
-                <script> //making popup output using javaScript
-                    function validateform(){     
-                        var email=document.forms ["signup"]["email"].value;
-                        var password=document.forms ["signup"]["password"].value;
-                        var gender=document.forms ["signup"]["gender"].value;
-                        var phone=document.forms ["signup"]["phone"].value;
-                        if (email==""|| password==""|| gender==""|| phone==""){
-                            alert ("Please fill all the details.")
-                        }
-                        else{
-                            alert ("Thank you. The form has been submitted succesfully.")
-                        }
-                    }
-                </script>
-            </th>
-           </tr> 
-        </table>
-        </div>
+        <h1>Login Form</h1>
+        <form name="signup" onsubmit="validateform()">
+            <p>Email:<br><input type="email" name="email"></p>
+            <p>Password:<br><input type="password" name="password"></p>
+            <p>Select your gender:<br>
+                <input type="radio" name="gender" value="male" checked>Male
+                <input type="radio" name="gender" value="female">Female
+            </p>
+            <p>Phone:<br><input type="tel" name="phone"></p>
+            <p>
+                <input type="checkbox" name="checkbox">
+                I agree to the <u>Terms of use</u> and <u>Privacy policies</u>
+            </p>
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+            function validateform() {
+                var email = document.forms["signup"]["email"].value;
+                var password = document.forms["signup"]["password"].value;
+                var gender = document.forms["signup"]["gender"].value;
+                var phone = document.forms["signup"]["phone"].value;
+                if (email == "" || password == "" || gender == "" || phone == "") {
+                    alert("Please fill in all the details.");
+                }
+                else {
+                    alert("Thank you. The form has been submitted successfully.");
+                }
+            }
+        </script>
+    </div>
 </body>
+
 </html>
